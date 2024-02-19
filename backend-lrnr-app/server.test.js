@@ -28,7 +28,6 @@ describe("Testing endpoints", () => {
   });
 
   it("checks /ask endpoint prompt", async () => {
-    // this will check app.js for the prompt
     const response = await request.post("/ask").send({
       length: 5,
       topic: "javascript",
